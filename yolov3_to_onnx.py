@@ -688,10 +688,10 @@ builder = GraphBuilderONNX(output_tensor_dims)
 
 # We want to populate our network with weights later, that's why we download those from
 # the official mirror (and verify the checksum):
-# weights_file_path = download_file(
-    # 'yolov3.weights',
-    # 'https://pjreddie.com/media/files/yolov3.weights',
-    # 'c84e5b99d0e52cd466ae710cadf6d84c')
+weights_file_path = download_file(
+    'yolov3.weights',
+    'https://pjreddie.com/media/files/yolov3.weights',
+    'c84e5b99d0e52cd466ae710cadf6d84c')
 
 # Now generate an ONNX graph with weights from the previously parsed layer configurations
 # and the weights file:
