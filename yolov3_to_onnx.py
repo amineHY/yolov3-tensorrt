@@ -697,7 +697,7 @@ builder = GraphBuilderONNX(output_tensor_dims)
 # and the weights file:
 yolov3_model_def = builder.build_onnx_graph(
     layer_configs=layer_configs,
-    weights_file_path="/home/yang/test/yolov3.weights",
+    weights_file_path="yolov3.weights",
     verbose=True)
 # Once we have the model definition, we do not need the builder anymore:
 del builder
